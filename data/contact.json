@@ -1,0 +1,19 @@
+[
+  {
+    "title": "email",
+    "name": "kathy@korevec.com",
+    "url": "mailto:kathy@korevec.com"
+  },{
+    "title": "twitter",
+    "name": "@simpsoka",
+    "url": "https://www.twitter.com/simpsoka"
+  },{
+    "title": "LinkedIn",
+    "name": "Kathy Korevec",
+    "url": "https://www.linkedin.com/profile/view?id=AAMAAABMtIgBJCD5HUpLPyl8pdhnOzZZahSEaJ4"
+  },{
+    "title": "GitHub",
+    "name": "@simpsoka",
+    "url": "https://github.com/simpsoka"
+  }
+]

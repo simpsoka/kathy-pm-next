@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'FreightTextProBook-Regular';
+  src: local('Freight Text Pro'), url('/fonts/FreightTextProBook-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* @font-face {
+  font-family: 'FreightTextProMedium-Regular';
+  src: local('Freight Text Pro Medium'), url('/fonts/FreightTextProMedium-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: 'JAF Bernino Sans';
+  src: local('JAF Bernino Sans'), url('/fonts/jaf-bernino-sans-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JAF Bernino Sans';
+  src: local('JAF Bernino Sans'), url('/fonts/jaf-bernino-sans-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "FreightTextProBook-Regular", Georgia, serif;
+}
+
+h1, h2, h3, nav a, .text-display {
+  font-family: 'JAF Bernino Sans'
+}
+
+h1, .text-display {
+  font-weight: 700;
+}
+
+h2, h3, h4 {
+  font-weight: 400;
+}
+
+.fancy-background {
+  background: linear-gradient(270.97deg, #FFDF64 -21.36%, #FF5752 -2.45%, #EA3EA0 26.84%, #B58CFD 64.15%, #13F0E1 108.29%, #A3F4A8 159.03%);
+}
+
+.header-bar {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 0.6rem;
+  width: 100%;
+}
+
+
+.logo:hover polygon {
+  fill: #000;
+  cursor: pointer;
+}
+
+.dark .logo:hover polygon {
+  fill: white;
+}
+
+.dark .logo:hover path {
+  fill: black;
+}
+
+.dark .dark-toggle * {
+  stroke: white;
+}
+
+.dark .dark-toggle-button {
+  border-color: white;
+}
+.dark-toggle-button {
+  border-color: black;
+  opacity: 0.2;
+  outline: none;
+}
+
+.dark-toggle-button:hover {
+  opacity: 0.5;
+}
+
+.dark-toggle * {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  border: 2px solid #000;
+}
+
+.page-container {
+  background-image: url('/images/confetti-large-compressed.png');
+  background-repeat: repeat;
+}
