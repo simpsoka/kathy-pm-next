@@ -113,25 +113,27 @@ h2, h3, h4 {
   }
 }
 
-nav:hover .hand-wave {
-  transform: rotate(-45deg);
-  animation-iteration-count: infinite;
-}
+@media (min-width:961px)  {
+  nav:hover .hand-wave {
+    transform: rotate(-45deg);
+    animation-iteration-count: infinite;
+  }
 
-nav {
-  transition: transform 200ms ease-in-out;
-  will-change: transform;
-}
+  nav {
+    transition: transform 200ms ease-in-out;
+    will-change: transform;
+  }
 
-nav:hover {
-  transform: scale(1.1);
-}
+  nav:hover {
+    transform: scale(1.1);
+  }
 
-.hand-wave {
-  will-change: transform;
-  transform: translate3d(0);
-  animation-name: wave;
-  animation-duration: 1000ms;
-  animation-iteration-count: 0;
-  animation-timing-function: ease-in-out;
+  .hand-wave {
+    will-change: transform;
+    transform: translate3d(0);
+    animation-name: wave;
+    animation-duration: 1000ms;
+    animation-iteration-count: 0;
+    animation-timing-function: ease-in-out;
+  }
 }
