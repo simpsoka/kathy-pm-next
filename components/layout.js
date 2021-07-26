@@ -85,9 +85,9 @@ export default function Layout({ children }) {
                 <path fill="white" className="cls-1" d="M180,234.14l-31.19-42.82L137.2,203.39v30.75H115.07V133.56H137.2v44l40.8-44h26.73l-40.95,42.67,42.82,57.91Z" transform="translate(0.17 -0.05)"/>
               </svg>
             </Link>
-            <nav className="flex justify-right gap-12 text-center text-s border-2 border-purple-600 dark:border-purple-400 rounded-full text-purple-600 hover:text-white hover:bg-purple-600 font-bold uppercase tracking-wide p-2 px-4 fancy-border hover:fancy-background dark:text-purple-400 dark:hover:text-gray-900 dark:hover:bg-purple-400">
+            <nav className="flex justify-right gap-12 text-center text-s border-2 border-purple-600 dark:border-purple-400 rounded-full text-purple-600 hover:text-white hover:bg-purple-600 font-bold uppercase tracking-wide fancy-border hover:fancy-background dark:text-purple-400 dark:hover:text-gray-900 dark:hover:bg-purple-400">
               <Link href="/contact" className="no-underline cursor-pointer">
-                {`Say Hi 👋`}
+                <span className="p-2 px-4 block cursor-pointer">Say Hi 👋</span>
               </Link>
             </nav>
           </header>
