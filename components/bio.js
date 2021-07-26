@@ -47,7 +47,7 @@ export default function Bio() {
           className="mx-1 leading-8 text-purple-600 dark:text-purple-400 hover:text-pink-600 dark:hover:text-pink-400 underline cursor-pointer"
         >Vercel</a>
 
-        on making the web faster.
+        on making the Web fast.
         <a
           href="/contact"
           className="mx-1 leading-8 text-purple-600 dark:text-purple-400 hover:text-pink-600 dark:hover:text-pink-400 underline cursor-pointer"
