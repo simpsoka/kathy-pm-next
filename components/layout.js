@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useLayoutEffect } from 'react'
+import { useLayoutEffect, useState } from 'react'
 
 
 export default function Layout({ children }) {
-  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+  const [isDarkMode, setDarkMode] = useState(false);
 
   useLayoutEffect(() => {
     if (window.localStorage.theme === 'dark' ||
@@ -18,14 +18,14 @@ export default function Layout({ children }) {
 
   const toggleDarkOn = (d) => {
     const w = d.defaultView;
-    d.documentElement.classList.add('dark')
     w.localStorage.theme = 'dark'
+    setDarkMode(true);
   }
 
   const toggleDarkOff = (d) => {
     const w = d.defaultView;
-    d.documentElement.classList.remove('dark')
     w.localStorage.theme = 'default'
+    setDarkMode(false)
   }
 
   const clickedDarkToggle = (el) => {
@@ -34,7 +34,7 @@ export default function Layout({ children }) {
   }
 
   return (
-    <>
+    <div className={`${isDarkMode ? 'dark' : ''}`}>
       <Head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -108,6 +108,6 @@ export default function Layout({ children }) {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
