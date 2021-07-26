@@ -17,8 +17,8 @@ export default function Bio() {
       </div>
       <p className="tracking-normal leading-normal lg:p-0 text-xl px-2 dark:text-gray-400  dark:bg-gray-800 bg-white">
         Hi! My name is Kathy. I’m from Alaska, and I’m a product manager in San
-        Francisco. I believe all great products are a result of effort that
-        starts with a conversation. I've taken products
+        Francisco. I believe all great products
+        start with a conversation. I've taken products
         from early prototypes to launch day consistently for the
         <a href="/cv"
         className="mx-1 leading-8 text-purple-600 dark:text-purple-400 underline cursor-pointer hover:text-pink-600 dark:hover:text-pink-400"
