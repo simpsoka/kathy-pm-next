@@ -34,7 +34,7 @@ body {
   font-family: "FreightTextProBook-Regular", Georgia, serif;
 }
 
-h1, h2, h3, nav a, .text-display {
+h1, h2, h3, nav a, .text-display, nav a span {
   font-family: 'JAF Bernino Sans'
 }
 
