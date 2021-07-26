@@ -43,6 +43,7 @@ export default function Layout({ children }) {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta property="og:title" content="Kathy Korevec: Product Manager" />
+        <meta property="og:description" content="Kathy Korevec: Head of Product at Vercel"  />
         <meta property="og:image" content="https://kathy.pm/images/avatar-compressed.webp"  />
 
         <title>kathy.pm</title>
