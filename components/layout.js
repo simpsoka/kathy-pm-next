@@ -87,7 +87,7 @@ export default function Layout({ children }) {
             </Link>
             <nav className="flex justify-right gap-12 text-center text-s border-2 border-purple-600 dark:border-purple-400 rounded-full text-purple-600 hover:text-white hover:bg-purple-600 font-bold uppercase tracking-wide fancy-border hover:fancy-background dark:text-purple-400 dark:hover:text-gray-900 dark:hover:bg-purple-400">
               <Link href="/contact" className="no-underline cursor-pointer">
-                <span className="p-2 px-4 block cursor-pointer">Say Hi 👋</span>
+                <span className="p-2 px-4 block cursor-pointer">Say Hi <span className="hand-wave">👋</span></span>
               </Link>
             </nav>
           </header>
