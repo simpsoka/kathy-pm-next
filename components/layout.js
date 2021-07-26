@@ -14,7 +14,7 @@ export default function Layout({ children }) {
     } else {
       toggleDarkOff(document);
     }
-  }, [])
+  }, [isDarkMode])
 
   const toggleDarkOn = (d) => {
     const w = d.defaultView;
