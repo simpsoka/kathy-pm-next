@@ -1,12 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useLayoutEffect, useState } from 'react'
 
+import { useEffect, useState } from 'react'
 
 export default function Layout({ children }) {
-  const [isDarkMode, setDarkMode] = useState(false);
-
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (window.localStorage.theme === 'dark' ||
     (!('theme' in window.localStorage) &&
     window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -14,18 +12,18 @@ export default function Layout({ children }) {
     } else {
       toggleDarkOff(document);
     }
-  }, [isDarkMode])
+  }, [])
 
   const toggleDarkOn = (d) => {
     const w = d.defaultView;
     w.localStorage.theme = 'dark'
-    setDarkMode(true);
+    document.body.classList.add('dark');
   }
 
   const toggleDarkOff = (d) => {
     const w = d.defaultView;
     w.localStorage.theme = 'default'
-    setDarkMode(false)
+    document.body.classList.remove('dark');
   }
 
   const clickedDarkToggle = (el) => {
@@ -34,10 +32,10 @@ export default function Layout({ children }) {
   }
 
   return (
-    <div className={`${isDarkMode ? 'dark' : ''}`}>
+    <>
       <Head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="description" content="Kathy Korevec Product Manager" />
         <meta name="viewport" content="user-scalable=0, initial-scale=1.0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -45,6 +43,7 @@ export default function Layout({ children }) {
         <meta property="og:title" content="Kathy Korevec" />
         <meta property="og:description" content="Kathy Korevec: Head of Product at Vercel"  />
         <meta property="og:image" content="https://kathy.pm/images/avatar-compressed.webp"  />
+        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: process.env.noflash}} />
 
         <title>kathy.pm</title>
         <link rel="icon" href="/favicon.ico" />
@@ -86,7 +85,7 @@ export default function Layout({ children }) {
               </svg>
             </Link>
             <nav className="flex justify-right gap-12 text-center text-s border-2 border-purple-600 dark:border-purple-400 rounded-full text-purple-600 hover:text-white hover:bg-purple-600 font-bold uppercase tracking-wide fancy-border hover:fancy-background dark:text-purple-400 dark:hover:text-gray-900 dark:hover:bg-purple-400">
-              <Link href="/contact" className="no-underline cursor-pointer">
+              <Link href="/contact" className="no-underline">
                 <span className="p-2 px-4 block cursor-pointer">Say Hi <span className="hand-wave inline-block">👋</span></span>
               </Link>
             </nav>
@@ -108,6 +107,6 @@ export default function Layout({ children }) {
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 }
