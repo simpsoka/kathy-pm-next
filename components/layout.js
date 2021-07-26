@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 
 
 export default function Layout({ children }) {
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (window.localStorage.theme === 'dark' ||
     (!('theme' in window.localStorage) &&
     window.matchMedia('(prefers-color-scheme: dark)').matches)) {
