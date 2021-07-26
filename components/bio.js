@@ -6,7 +6,7 @@ export default function Bio() {
     <>
       <div className="flex flex-col items-center justify-center">
         <div className="lg:w-28 w-20">
-          <Image src={avatar} alt="Kathy Korevec" placeholder="blur" className="rounded-full" />
+          <Image src={avatar} alt="Kathy Korevec" className="rounded-full" />
         </div>
         <h1 className="my-5 lg:text-5xl text-3xl font-extrabold text-gray-900 dark:text-gray-200">
           Kathy Korevec
