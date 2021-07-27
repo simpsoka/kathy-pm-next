@@ -1,36 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var storageKey = 'theme';
-    var classNameDark = 'dark';
-    var classNameLight = 'light';
+  const toggleDarkOn = (d) => {
+    const w = d.defaultView;
+    w.localStorage.theme = 'dark'
+    document.body.classList.add('dark');
+  }
 
-    function setClassOnDocumentBody(darkMode) {
-      document.body.classList.add(darkMode ? classNameDark : classNameLight);
-      document.body.classList.remove(darkMode ? classNameLight : classNameDark);
-    }
+  const toggleDarkOff = (d) => {
+    const w = d.defaultView;
+    w.localStorage.theme = 'default'
+    document.body.classList.remove('dark');
+  }
 
-    var preferDarkQuery = '(prefers-color-scheme: dark)';
-    var mql = window.matchMedia(preferDarkQuery);
-    var supportsColorSchemeQuery = mql.media === preferDarkQuery;
-    var localStorageTheme = null;
-    try {
-        localStorageTheme = localStorage.getItem(storageKey);
-    } catch (err) {}
-    var localStorageExists = localStorageTheme !== null;
-    if (localStorageExists) {
-        localStorageTheme = localStorageTheme;
-    }
-
-    // Determine the source of truth
-    if (localStorageExists) {
-        // source of truth from localStorage
-        setClassOnDocumentBody(localStorageTheme);
-    } else if (supportsColorSchemeQuery) {
-        // source of truth from system
-        setClassOnDocumentBody(mql.matches);
-        localStorage.setItem(storageKey, mql.matches);
+  if (window.localStorage.theme === 'dark' ||
+    (!('theme' in window.localStorage) &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      toggleDarkOn(document);
     } else {
-        // source of truth from document.body
-        var isDarkMode = document.body.classList.contains(classNameDark);
-        localStorage.setItem(storageKey, isDarkMode);
-    }
+      toggleDarkOff(document);
+  }
 })
