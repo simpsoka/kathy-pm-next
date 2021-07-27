@@ -4,15 +4,15 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react'
 
 export default function Layout({ children }) {
-  useEffect(() => {
-    if (window.localStorage.theme === 'dark' ||
-    (!('theme' in window.localStorage) &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      toggleDarkOn(document);
-    } else {
-      toggleDarkOff(document);
-    }
-  }, [])
+//   useEffect(() => {
+//     if (window.localStorage.theme === 'dark' ||
+//     (!('theme' in window.localStorage) &&
+//     window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+//       toggleDarkOn(document);
+//     } else {
+//       toggleDarkOff(document);
+//     }
+//   }, [])
 
   const toggleDarkOn = (d) => {
     const w = d.defaultView;
