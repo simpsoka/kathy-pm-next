@@ -44,6 +44,7 @@ export default function Layout({ children }) {
         <meta property="og:description" content="Kathy Korevec: Head of Product at Vercel"  />
         <meta property="og:image" content="https://kathy.pm/images/avatar-compressed.webp"  />
         <script type="text/javascript" dangerouslySetInnerHTML={{ __html: process.env.noflash}} />
+        <script async src="https://cdn.splitbee.io/sb.js" />
 
         <title>kathy.pm</title>
         <link rel="icon" href="/favicon.ico" />
