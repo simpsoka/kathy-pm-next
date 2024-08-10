@@ -5,8 +5,8 @@
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/simpsoka/kathy-pm.git
-$ cd kathy-pm
+$ git clone https://github.com/simpsoka/kathy-pm-next.git
+$ cd kathy-pm-next
 $ yarn
 $ yarn dev
 ```

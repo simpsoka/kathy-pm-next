@@ -1,5 +1,13 @@
 [
   {
+    "title": "DevEx Principles: Chef cooking for chefs",
+    "url": "https://kathykorevec.substack.com/p/devex-principles-chef-cooking-for"
+  },
+  {
+    "title": "DevEx Principles: Minimize Context Switching",
+    "url": "https://kathykorevec.substack.com/p/devex-principles-minimize-switching"
+  },
+  {
     "title": "Interview the interviewer",
     "url": "https://github.com/readme/guides/technical-interviews"
   },
@@ -13,11 +21,11 @@
   },
   {
     "title": "Maybe it's time we rethink docs",
-    "url": "https://kathykorevec.medium.com/building-a-better-place-for-docs-197f92765409"
+    "url": "https://kathykorevec.substack.com/p/building-a-better-place-for-docs-197f92765409"
   },
   {
     "title": "Reading list for product people",
-    "url": "https://kathykorevec.medium.com/reading-list-for-product-people-1ebdc21ecb41"
+    "url": "https://kathykorevec.substack.com/p/reading-list-for-product-people-1ebdc21ecb41"
   },
   {
     "title": "Readme Project: Chasing challenges to ship developer solutions",
@@ -25,6 +33,10 @@
   },
   {
     "title": "Product opportunity and idea templates for modern product managers",
-    "url": "https://kathykorevec.medium.com/product-opportunity-and-idea-templates-for-modern-product-managers-620c13328284"
+    "url": "https://kathykorevec.substack.com/p/product-opportunity-and-idea-templates-for-modern-product-managers-620c13328284"
+  },
+  {
+    "title": "Making the Leadership CI",
+    "url": "https://kathykorevec.substack.com/p/making-the-leadership-ci-a5a59fa8cf92"
   }
 ]
