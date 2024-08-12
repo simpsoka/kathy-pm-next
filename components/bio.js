@@ -43,11 +43,11 @@ export default function Bio() {
         </a>
         through the years. Now I work at
         <a
-          href="https://www.vercel.com"
+          href="https://labs.google/"
           className="mx-1 leading-8 text-purple-600 dark:text-purple-400 hover:text-pink-600 dark:hover:text-pink-400 underline cursor-pointer"
-        >Vercel</a>
+        >Google</a>
 
-        on making the Web fast.
+        on Code AI and AI developer tools.
         <a
           href="/contact"
           className="mx-1 leading-8 text-purple-600 dark:text-purple-400 hover:text-pink-600 dark:hover:text-pink-400 underline cursor-pointer"
