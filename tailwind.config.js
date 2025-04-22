@@ -1,10 +1,9 @@
 module.exports = {
-  mode: 'jit',
-  darkMode: 'class',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class', // Keep
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'], // Renamed from purge
   theme: {
     extend: {
-      typography: (theme) => ({
+      typography: (theme) => ({ // Keep existing typography config
         DEFAULT: {
           'a:hover': {
             color: theme('colors.pink.100')
@@ -36,8 +35,6 @@ module.exports = {
       }),
     },
   },
-  variants: {
-    typography: ['dark'],
-  },
-  plugins: [require('@tailwindcss/typography')],
+  // variants block removed
+  plugins: [require('@tailwindcss/typography')], // Keep
 }
