@@ -22,6 +22,6 @@
     "tailwindcss": "^2.2.4"
   },
   "engines": {
-    "node": "16.20.2"
+    "node": "^22.0.0"
   }
 }
