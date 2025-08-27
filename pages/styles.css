@@ -1,3 +1,7 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@config "./tailwind.config.js";
+
 @font-face {
   font-family: 'FreightTextProBook-Regular';
   src: local('Freight Text Pro'), url('/fonts/FreightTextProBook-Regular.woff2') format('woff2');

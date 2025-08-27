@@ -1,4 +1,3 @@
-import 'tailwindcss/tailwind.css';
 import './styles.css'
 import Script from 'next/script';
 
