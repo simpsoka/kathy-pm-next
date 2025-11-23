@@ -140,14 +140,49 @@ h2, h3, h4 {
   }
 }
 
-.dark .page-container {
-  background-color: #1f2937;
-}
+/* Polyfill for broken Tailwind Dark Mode Utilities */
 
-/* Fix text colors for dark mode since utility classes are failing */
-.dark h1, .dark h2, .dark h3, .dark h4, .dark p, .dark li, .dark .text-gray-900 {
-  color: #e5e7eb;
+/* Colors */
+.dark .dark\:text-gray-200 { color: #e5e7eb; }
+.dark .dark\:text-gray-400 { color: #9ca3af; }
+.dark .dark\:text-gray-600 { color: #4b5563; }
+.dark .dark\:text-gray-700 { color: #374151; }
+.dark .dark\:text-purple-400 { color: #c084fc; }
+
+/* Backgrounds */
+.dark .dark\:bg-gray-800 { background-color: #1f2937; }
+.dark .dark\:bg-purple-400 { background-color: #c084fc; }
+
+/* Borders */
+.dark .dark\:border-purple-400 { border-color: #c084fc; }
+
+/* Hover States */
+.dark .dark\:hover\:text-pink-400:hover { color: #f472b6; }
+.dark .dark\:hover\:text-gray-900:hover { color: #111827; }
+.dark .dark\:hover\:bg-purple-400:hover { background-color: #c084fc; }
+
+/* Typography (Prose) */
+/* Targeting .dark\:prose-dark used in pages/cv.js and pages/philosophy.js */
+.dark .dark\:prose-dark {
+  color: #9ca3af; /* gray-400 */
 }
-.dark h2, .dark h4 {
-  color: #9ca3af;
+.dark .dark\:prose-dark h1,
+.dark .dark\:prose-dark h2,
+.dark .dark\:prose-dark h3,
+.dark .dark\:prose-dark h4,
+.dark .dark\:prose-dark strong {
+  color: #e5e7eb; /* gray-200 */
+}
+.dark .dark\:prose-dark p,
+.dark .dark\:prose-dark li {
+  color: #9ca3af; /* gray-400 */
+}
+.dark .dark\:prose-dark a {
+  color: #c084fc; /* purple-400 */
+}
+.dark .dark\:prose-dark a:hover {
+  color: #f472b6; /* pink-400 */
+}
+.dark .dark\:prose-dark ul > li::before {
+  background-color: #9ca3af; /* gray-400 */
 }
