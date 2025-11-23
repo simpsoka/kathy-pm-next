@@ -4,16 +4,6 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react'
 
 export default function Layout({ children }) {
-//   useEffect(() => {
-//     if (window.localStorage.theme === 'dark' ||
-//     (!('theme' in window.localStorage) &&
-//     window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-//       toggleDarkOn(document);
-//     } else {
-//       toggleDarkOff(document);
-//     }
-//   }, [])
-
   const toggleDarkOn = (d) => {
     const w = d.defaultView;
     w.localStorage.theme = 'dark'
@@ -25,6 +15,16 @@ export default function Layout({ children }) {
     w.localStorage.theme = 'default'
     document.body.classList.remove('dark');
   }
+
+  useEffect(() => {
+    if (window.localStorage.theme === 'dark' ||
+    (!('theme' in window.localStorage) &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      toggleDarkOn(document);
+    } else {
+      toggleDarkOff(document);
+    }
+  }, [])
 
   const clickedDarkToggle = (el) => {
     const document = el.target.ownerDocument;
