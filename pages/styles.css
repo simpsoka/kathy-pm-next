@@ -139,3 +139,15 @@ h2, h3, h4 {
     animation-timing-function: ease-in-out;
   }
 }
+
+.dark .page-container {
+  background-color: #1f2937;
+}
+
+/* Fix text colors for dark mode since utility classes are failing */
+.dark h1, .dark h2, .dark h3, .dark h4, .dark p, .dark li, .dark .text-gray-900 {
+  color: #e5e7eb;
+}
+.dark h2, .dark h4 {
+  color: #9ca3af;
+}
