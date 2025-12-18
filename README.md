@@ -17,3 +17,5 @@ $ yarn dev
 - [Vercel](https://vercel.com)
 - [MDX](https://github.com/mdx-js/mdx)
 - [Tailwind CSS](https://tailwindcss.com/)
+
+<!-- TODO: This project uses "bleeding edge" versions of Next.js (16.0.3) and React (19.2.0). Ensure to check for stability issues or API changes when updating dependencies. -->

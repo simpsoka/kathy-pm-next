@@ -2,6 +2,7 @@ import Image from 'next/image';
 import avatar from '../public/images/avatar-compressed.webp';
 
 export default function Bio() {
+  // TODO: Refactor hardcoded links (e.g., to Google, CV, etc.) into a configuration or data file, similar to how `publications` and `talks` are handled.
   return (
     <>
       <div className="flex flex-col items-center justify-center">
