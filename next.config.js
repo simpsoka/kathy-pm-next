@@ -5,8 +5,8 @@ const withMDX = require('@next/mdx')({
 
 module.exports = withMDX({
   env: {
-   noflash: fs.readFileSync('./public/scripts/noflash.js').toString()
- },
+    noflash: fs.readFileSync('./public/scripts/noflash.js').toString(),
+  },
   i18n: {
     locales: ['en-US'],
     defaultLocale: 'en-US',

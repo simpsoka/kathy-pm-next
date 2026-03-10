@@ -11,7 +11,14 @@ export default function Shipped() {
         <ul className="ml-5 mt-10 list-disc dark:text-gray-600">
           {publications.map((p) => (
             <li key={p.title} className="py-1">
-              <a href={p.url} className="text-purple-600 underline cursor-pointer hover:text-pink-600 text-lg break-words dark:text-purple-400 dark:hover:text-pink-400" target="_blank" rel="noopener">{p.title}</a>
+              <a
+                href={p.url}
+                className="text-purple-600 underline cursor-pointer hover:text-pink-600 text-lg break-words dark:text-purple-400 dark:hover:text-pink-400"
+                target="_blank"
+                rel="noopener"
+              >
+                {p.title}
+              </a>
             </li>
           ))}
         </ul>
@@ -24,7 +31,14 @@ export default function Shipped() {
         <ul className="ml-5 mt-10 list-disc dark:text-gray-600">
           {talks.map((t) => (
             <li key={t.title} className="py-1">
-              <a href={t.url} className="text-purple-600 dark:text-purple-400 underline cursor-pointer hover:text-pink-600 text-lg break-words dark:hover:text-pink-400" target="_blank" rel="noopener">{t.title}</a>
+              <a
+                href={t.url}
+                className="text-purple-600 dark:text-purple-400 underline cursor-pointer hover:text-pink-600 text-lg break-words dark:hover:text-pink-400"
+                target="_blank"
+                rel="noopener"
+              >
+                {t.title}
+              </a>
             </li>
           ))}
         </ul>
