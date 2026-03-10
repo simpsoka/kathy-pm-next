@@ -17,13 +17,13 @@ export default function Bio() {
       </div>
       <p className="tracking-normal leading-normal lg:p-0 text-xl px-2 dark:text-gray-400  dark:bg-gray-800 bg-white">
         Hi! My name is Kathy. I’m from Alaska, and I’m a product manager in San
-        Francisco. I believe all great products
-        start with a conversation. I've taken products
-        from early prototypes to launch day consistently for the
-        <a href="/cv"
-        className="mx-1 leading-8 text-purple-600 dark:text-purple-400 underline cursor-pointer hover:text-pink-600 dark:hover:text-pink-400"
+        Francisco. I believe all great products start with a conversation. I've
+        taken products from early prototypes to launch day consistently for the
+        <a
+          href="/cv"
+          className="mx-1 leading-8 text-purple-600 dark:text-purple-400 underline cursor-pointer hover:text-pink-600 dark:hover:text-pink-400"
         >
-        past 15 years.
+          past 15 years.
         </a>
         Through my successes (and failures) I've developed a
         <a
@@ -45,8 +45,9 @@ export default function Bio() {
         <a
           href="https://labs.google/"
           className="mx-1 leading-8 text-purple-600 dark:text-purple-400 hover:text-pink-600 dark:hover:text-pink-400 underline cursor-pointer"
-        >Google</a>
-
+        >
+          Google
+        </a>
         on Code AI and AI developer tools.
         <a
           href="/contact"

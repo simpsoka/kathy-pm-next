@@ -1,8 +1,10 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @font-face {
   font-family: 'FreightTextProBook-Regular';
-  src: local('Freight Text Pro'), url('/fonts/FreightTextProBook-Regular.woff2') format('woff2');
+  src:
+    local('Freight Text Pro'),
+    url('/fonts/FreightTextProBook-Regular.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -18,7 +20,9 @@
 
 @font-face {
   font-family: 'JAF Bernino Sans';
-  src: local('JAF Bernino Sans'), url('/fonts/jaf-bernino-sans-400.woff2') format('woff2');
+  src:
+    local('JAF Bernino Sans'),
+    url('/fonts/jaf-bernino-sans-400.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -26,30 +30,48 @@
 
 @font-face {
   font-family: 'JAF Bernino Sans';
-  src: local('JAF Bernino Sans'), url('/fonts/jaf-bernino-sans-700.woff2') format('woff2');
+  src:
+    local('JAF Bernino Sans'),
+    url('/fonts/jaf-bernino-sans-700.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: "FreightTextProBook-Regular", Georgia, serif;
+  font-family: 'FreightTextProBook-Regular', Georgia, serif;
 }
 
-h1, h2, h3, nav a, .text-display, nav {
-  font-family: 'JAF Bernino Sans'
+h1,
+h2,
+h3,
+nav a,
+.text-display,
+nav {
+  font-family: 'JAF Bernino Sans';
 }
 
-h1, .text-display {
+h1,
+.text-display {
   font-weight: 700;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-weight: 400;
 }
 
 .fancy-background {
-  background: linear-gradient(270.97deg, #FFDF64 -21.36%, #FF5752 -2.45%, #EA3EA0 26.84%, #B58CFD 64.15%, #13F0E1 108.29%, #A3F4A8 159.03%);
+  background: linear-gradient(
+    270.97deg,
+    #ffdf64 -21.36%,
+    #ff5752 -2.45%,
+    #ea3ea0 26.84%,
+    #b58cfd 64.15%,
+    #13f0e1 108.29%,
+    #a3f4a8 159.03%
+  );
 }
 
 .header-bar {
@@ -59,7 +81,6 @@ h2, h3, h4 {
   height: 0.6rem;
   width: 100%;
 }
-
 
 .logo:hover polygon {
   fill: #000;
@@ -108,14 +129,16 @@ h2, h3, h4 {
 @keyframes wave {
   0% {
     transform: rotate(-45deg);
-  } 50% {
+  }
+  50% {
     transform: rotate(90deg);
-  } 100% {
+  }
+  100% {
     transform: rotate(-45deg);
   }
 }
 
-@media (min-width:961px)  {
+@media (min-width: 961px) {
   nav:hover .hand-wave {
     transform: rotate(-45deg);
     animation-iteration-count: infinite;
@@ -143,23 +166,45 @@ h2, h3, h4 {
 /* Polyfill for broken Tailwind Dark Mode Utilities */
 
 /* Colors */
-.dark .dark\:text-gray-200 { color: #e5e7eb; }
-.dark .dark\:text-gray-400 { color: #9ca3af; }
-.dark .dark\:text-gray-600 { color: #4b5563; }
-.dark .dark\:text-gray-700 { color: #374151; }
-.dark .dark\:text-purple-400 { color: #c084fc; }
+.dark .dark\:text-gray-200 {
+  color: #e5e7eb;
+}
+.dark .dark\:text-gray-400 {
+  color: #9ca3af;
+}
+.dark .dark\:text-gray-600 {
+  color: #4b5563;
+}
+.dark .dark\:text-gray-700 {
+  color: #374151;
+}
+.dark .dark\:text-purple-400 {
+  color: #c084fc;
+}
 
 /* Backgrounds */
-.dark .dark\:bg-gray-800 { background-color: #1f2937; }
-.dark .dark\:bg-purple-400 { background-color: #c084fc; }
+.dark .dark\:bg-gray-800 {
+  background-color: #1f2937;
+}
+.dark .dark\:bg-purple-400 {
+  background-color: #c084fc;
+}
 
 /* Borders */
-.dark .dark\:border-purple-400 { border-color: #c084fc; }
+.dark .dark\:border-purple-400 {
+  border-color: #c084fc;
+}
 
 /* Hover States */
-.dark .dark\:hover\:text-pink-400:hover { color: #f472b6; }
-.dark .dark\:hover\:text-gray-900:hover { color: #111827; }
-.dark .dark\:hover\:bg-purple-400:hover { background-color: #c084fc; }
+.dark .dark\:hover\:text-pink-400:hover {
+  color: #f472b6;
+}
+.dark .dark\:hover\:text-gray-900:hover {
+  color: #111827;
+}
+.dark .dark\:hover\:bg-purple-400:hover {
+  background-color: #c084fc;
+}
 
 /* Typography (Prose) */
 /* Targeting .dark\:prose-dark used in pages/cv.js and pages/philosophy.js */
